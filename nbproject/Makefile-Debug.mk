@@ -35,8 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/ef515e5c/clasificar.o \
-	${OBJECTDIR}/_ext/ef515e5c/main.o
+	${OBJECTDIR}/clasificar.o \
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -63,15 +63,15 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tp8ej4: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tp8ej4 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/_ext/ef515e5c/clasificar.o: ../../Desktop/clasificar.c
-	${MKDIR} -p ${OBJECTDIR}/_ext/ef515e5c
+${OBJECTDIR}/clasificar.o: clasificar.c
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ef515e5c/clasificar.o ../../Desktop/clasificar.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/clasificar.o clasificar.c
 
-${OBJECTDIR}/_ext/ef515e5c/main.o: ../../Desktop/main.c
-	${MKDIR} -p ${OBJECTDIR}/_ext/ef515e5c
+${OBJECTDIR}/main.o: main.c
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ef515e5c/main.o ../../Desktop/main.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
 
 # Subprojects
 .build-subprojects:
